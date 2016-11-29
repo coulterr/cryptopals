@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	int_queue keysizes; 
 	int_queue_init(&keysizes); 
 	
-	get_smallest_hamming(&keysizes, ciphertext, len, 2, 40); 
+	get_smallest_hamming(&keysizes, ciphertext, 2, 40); 
 
 	
 	printf("Printing Cipertext:\n"); 
@@ -75,8 +75,7 @@ int main(int argc, char **argv)
 		{
 			char dest[blocks[j].length]; 
 
-			key = get_deciphered_single_char_xored_string_other(dest, blocks[j].buffer, blocks[j].length); 
-				
+			//DO SOMETHING WITH BLOCKS[j].BUFFER 	
 
 			for(k = 0; k < blocks[j].length; k++)
 			{

@@ -75,3 +75,32 @@ int get_hamming_distance(unsigned char *str1, unsigned char *str2, int len)
 
 	return count; 
 }
+
+
+int get_smallest_hamming(int_queue *keysizes, unsigned char *str, int min, int max)
+{
+	int i, dist, smallest;
+	smallest = 1000; 
+
+	for(i = min; i < max; i++)
+	{
+		dist = get_hamming_distance(str, str + i, i); 
+		
+		if(dist <= smallest){
+			int_enqueue(keysizes, i); 
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
