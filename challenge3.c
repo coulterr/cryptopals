@@ -4,7 +4,6 @@
 #include "lib/hex_functions.h"
 #include "lib/dictionary_functions.h"
 #include "lib/cipher_functions.h"
-
 int main(int argc, char **argv)
 {
 	int i, hexlen, binlen; 
