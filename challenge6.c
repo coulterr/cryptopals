@@ -9,6 +9,7 @@ typedef struct{
 	unsigned char *buffer; 
 }block; 
 
+// IMPORTANT!!! FORGOT ABOUT CONVERTING TO BIN FIRST!!!
 
 int main(int argc, char **argv)
 {
