@@ -36,3 +36,6 @@ xor_functions: lib/xor_functions.c
 	gcc -o lib/xor_functions.o -c lib/xor_functions.c 
 int_queue: lib/int_queue.c
 	gcc -o lib/int_queue.o -c lib/int_queue.c
+clean: 
+	rm *.o lib/*.o challenge1 challenge2 challenge3 challenge4 challenge5 challenge6 \
+	queue_test single_char_xor_decoder single_char_xor_encoder
